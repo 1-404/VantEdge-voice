@@ -216,6 +216,7 @@ Open Where It Matters
 Core plumbing (voice-module, command-logic) is public. Competitive advantage (voice-processing pipeline) stays private until post-launch.
 
 Why We're Building This
+
 The Home Assistant and Rhasspy communities demand privacy-first voice. They want to own their data. They're tired of closed ecosystems.
 We're building the infrastructure. Contractors, small business owners, and HA enthusiasts will build the features.
 

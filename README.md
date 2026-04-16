@@ -188,13 +188,11 @@ Desktop (only if users request)
 
 
 
-Integration Points
-
-Home Assistant
+- Integration Points
+- Home Assistant
 
 Voice-first control via standard intents. No special HA integration needed — use Android intent system.
-
-ESPHome
+- ESPHome
 
 Mic nodes can run on ESP32-S3 boards. Same mic scoring protocol, same LAN coordination.
 

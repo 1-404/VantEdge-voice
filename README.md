@@ -221,9 +221,13 @@ The Home Assistant and Rhasspy communities demand privacy-first voice. They want
 We're building the infrastructure. Contractors, small business owners, and HA enthusiasts will build the features.
 
 Feedback Welcome
+
 We're designing this in public. Architecture feedback, security review, use-case discussion — all valuable.
+
 Contact: dev@vantedgevoice.app
+
 GitHub: github.com/1-404
+
 Status: Coming soon. Want to help shape it?
 
 Quick Links

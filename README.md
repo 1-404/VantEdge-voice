@@ -2,24 +2,25 @@ VantEdge Voice
 A local-first, mathematically private voice OS layer for Android.
 Privacy is not a promise. It's architecture.
 
-What It Does
+- What It Does
 VantEdge Voice is a voice operating system that sits between your mic and your Android apps. You speak. It understands. It invokes any Android intent — and then it stops.
 No data leaves your device unless you explicitly ask for it. No accounts. No tracking. No cloud by default.
 Core Capabilities
 On-Device Wake Word & STT
 
-Fixed "Hey VantEdge" wake word, fully on-device via openWakeWord
+- Fixed "Hey VantEdge" wake word, fully on-device via openWakeWord
 
 Why fixed? One auditable pattern. Fully open-source, fully verifiable.
 Voice training (opt-in, heavily suggested): Say commands a few times for dramatically better accuracy on your voice, accent, and environment. Here's how we keep it safe: extract voice hashes and acoustic features, discard raw audio immediately, train locally on-device, never transmit voice data. You get better accuracy. We never hear you.
 Custom wake words? Roadmap for v4+, after the core architecture is solid.
 
 
-Distributed mic support — route voice through multiple LAN devices, pick the best one
+- Distributed mic support
+Route voice through multiple LAN devices, pick the best one
 Three-tier voice processing: wake word → fixed vocabulary commands → complex queries on demand
 Confidence scoring, no mystery — you see exactly how confident we are
 
-Intent System — Zero Data Leaving VantEdge
+- Intent System — Zero Data Leaving VantEdge
 
 Fire standard Android intents to any app (navigation, calls, music, third-party automation)
 VantEdge does not know which app answered or what happened next

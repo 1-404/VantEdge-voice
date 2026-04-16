@@ -197,15 +197,22 @@ Your Own Infrastructure
 Ollama on a LAN server? Route complex queries there. WireGuard for untrusted networks? Built in.
 
 Design Principles
+
 Mathematical, Not a Promise
 Privacy is enforced by architecture, not policy. You don't have to trust us — you can verify the code.
+
 No Accounts. Ever.
+
 Tokens replace identity. No usernames, emails, or tracking.
 Local First. Cloud Optional.
 Default = fully offline. Cloud is opt-in, explicit, user's responsibility.
+
 Tinkerer-Friendly
+
 Built for people who plug in old Android phones, Raspberry Pis, and ESP32 boards around the house.
+
 Open Where It Matters
+
 Core plumbing (voice-module, command-logic) is public. Competitive advantage (voice-processing pipeline) stays private until post-launch.
 
 Why We're Building This

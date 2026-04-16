@@ -40,6 +40,7 @@ This is the physical embodiment of capability-based security. No UI friction. No
 
 
 Single-use tokens, short TTLs, revocation on the fly
+
 The juice: you're not managing users or accounts. You're delegating capabilities. That's the paradigm shift.
 
 Distributed Mic Architecture (coming v2)

@@ -3,6 +3,7 @@ A local-first, mathematically private voice OS layer for Android.
 Privacy is not a promise. It's architecture.
 
 - What It Does
+
 VantEdge Voice is a voice operating system that sits between your mic and your Android apps. You speak. It understands. It invokes any Android intent — and then it stops.
 No data leaves your device unless you explicitly ask for it. No accounts. No tracking. No cloud by default.
 Core Capabilities
@@ -16,6 +17,7 @@ Custom wake words? Roadmap for v4+, after the core architecture is solid.
 
 
 - Distributed mic support
+
 Route voice through multiple LAN devices, pick the best one
 Three-tier voice processing: wake word → fixed vocabulary commands → complex queries on demand
 Confidence scoring, no mystery — you see exactly how confident we are
@@ -27,7 +29,7 @@ VantEdge does not know which app answered or what happened next
 Privacy guarantee is mathematical, not a promise — Android OS mediates everything
 Intent handlers are separate apps; VantEdge structurally cannot see them
 
-Token-Based Capability Model — Permission & Delegation OS
+- Token-Based Capability Model — Permission & Delegation OS
 
 This is where VantEdge stops being a "voice assistant" and becomes infrastructure.
 Five-tier token hierarchy (server, hub, node, guest, NFC) — all anonymous, all cryptographic
@@ -40,11 +42,11 @@ Johnson's phone gets a scoped token. Knows exactly what he can do. Token expires
 This is the physical embodiment of capability-based security. No UI friction. No identity lookup. Just capability.
 
 
-Single-use tokens, short TTLs, revocation on the fly
+- Single-use tokens, short TTLs, revocation on the fly
 
 The juice: you're not managing users or accounts. You're delegating capabilities. That's the paradigm shift.
 
-Distributed Mic Architecture (coming v2)
+- Distributed Mic Architecture (coming v2)
 
 Multiple LAN devices act as mic nodes
 Each mic scores its own audio quality and proximity
@@ -53,14 +55,14 @@ Consensus wake word detection across mics — catch misses, reject false positiv
 Old Android phones, ESP32 boards, Raspberry Pis all work as nodes
 Note: WiFi RTT proximity estimation in testing — may refine in later versions
 
-LAN-First, Cloud-Optional
+- LAN-First, Cloud-Optional
 
 Hub/node communication over LAN only — no phone home by default
 Self-hosted Ollama on your server? Route complex queries there
 External LLM? Opt-in, explicit, user's responsibility
 
 
-Worksite Access Control (MVP feature)
+- Worksite Access Control (MVP feature)
 
 Crew member wants the job? They install VantEdge on their own phone.
 During onboarding, they grant you device admin permissions — for that project only.
@@ -75,7 +77,7 @@ No hardware to manage. No phones to distribute. Just capability distribution.
 This is the token model solving contractor workflow: lock down access for a job, release it when done, allow breathing room during breaks.
 
 
-What This Actually Is
+- What This Actually Is
 
 Not a voice assistant. (That's boring. Everyone's building those.)
 A voice-first permission and delegation operating system.

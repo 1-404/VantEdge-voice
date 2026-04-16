@@ -188,13 +188,20 @@ Desktop (only if users request)
 
 
 Integration Points
+
 Home Assistant
+
 Voice-first control via standard intents. No special HA integration needed — use Android intent system.
 ESPHome
+
 Mic nodes can run on ESP32-S3 boards. Same mic scoring protocol, same LAN coordination.
+
 Third-Party Skills
+
 Build as separate Android apps. Implement Android intent handlers. VantEdge fires intents and stops. Privacy is mathematical.
+
 Your Own Infrastructure
+
 Ollama on a LAN server? Route complex queries there. WireGuard for untrusted networks? Built in.
 
 Design Principles

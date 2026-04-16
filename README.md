@@ -190,40 +190,44 @@ Desktop (only if users request)
 
 - Integration Points
 - Home Assistant
+
 Voice-first control via standard intents. No special HA integration needed — use Android intent system.
+
 - ESPHome
+
 Mic nodes can run on ESP32-S3 boards. Same mic scoring protocol, same LAN coordination.
+
 - Third-Party Skills
 
 Build as separate Android apps. Implement Android intent handlers. VantEdge fires intents and stops. Privacy is mathematical.
 
-Your Own Infrastructure
+- Your Own Infrastructure
 
 Ollama on a LAN server? Route complex queries there. WireGuard for untrusted networks? Built in.
 
-Design Principles
+- Design Principles
 
 Mathematical, Not a Promise
 
 Privacy is enforced by architecture, not policy. You don't have to trust us — you can verify the code.
 
-No Accounts. Ever.
+- No Accounts. Ever.
 
 Tokens replace identity. No usernames, emails, or tracking.
 
-Local First. Cloud Optional.
+- Local First. Cloud Optional.
 
 Default = fully offline. Cloud is opt-in, explicit, user's responsibility.
 
-Tinkerer-Friendly
+- Tinkerer-Friendly
 
 Built for people who plug in old Android phones, Raspberry Pis, and ESP32 boards around the house.
 
-Open Where It Matters
+- Open Where It Matters
 
 Core plumbing (voice-module, command-logic) is public. Competitive advantage (voice-processing pipeline) stays private until post-launch.
 
-Why We're Building This
+- Why We're Building This
 
 The Home Assistant and Rhasspy communities demand privacy-first voice. They want to own their data. They're tired of closed ecosystems.
 We're building the infrastructure. Contractors, small business owners, and HA enthusiasts will build the features.

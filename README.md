@@ -220,7 +220,8 @@ Tokens replace identity. No usernames, emails, or tracking.
 
 - Local First. Cloud Optional.
 
-Default = fully offline. Cloud is opt-in, explicit, user's responsibility.
+Default = fully offline. 
+Cloud is opt-in, explicit, user's responsibility.
 
 - Tinkerer-Friendly
 

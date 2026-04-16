@@ -248,10 +248,13 @@ Status: Coming soon. Want to help shape it?
 
 Quick Links
 
-Full Documentation — architecture deep-dives, integration guides, security considerations
-Token System Explained — how capability tokens work
-Distributed Mic Protocol — consensus wake word, mic scoring
-Third-Party Skills — build intent handlers, privacy guarantees
+- Full Documentation — architecture deep-dives, integration guides, security considerations
+
+- Token System Explained — how capability tokens work
+
+- Distributed Mic Protocol — consensus wake word, mic scoring
+
+- Third-Party Skills — build intent handlers, privacy guarantees
 
 
 VantEdge Voice

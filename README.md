@@ -239,7 +239,11 @@ Third-Party Skills — build intent handlers, privacy guarantees
 
 
 VantEdge Voice
+
 Mathematical. Not a promise.
+
 intent.fire()
+
 // we stop here
+
 Stop the snoop.

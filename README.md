@@ -74,6 +74,7 @@ This is the token model solving contractor workflow: lock down access for a job,
 
 
 What This Actually Is
+
 Not a voice assistant. (That's boring. Everyone's building those.)
 A voice-first permission and delegation operating system.
 You build the assistant on top of it. Skills are just Android intent handlers. VantEdge is the plumbing that mediates permissions, enforces least privilege, handles delegation, and makes it all work offline with zero accounts.

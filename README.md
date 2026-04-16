@@ -187,8 +187,8 @@ GPS mileage (opt-in)
 Desktop (only if users request)
 
 
+Integration Points
 
-- Integration Points
 - Home Assistant
 
 Voice-first control via standard intents. No special HA integration needed — use Android intent system.

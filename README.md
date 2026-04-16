@@ -187,6 +187,7 @@ GPS mileage (opt-in)
 Desktop (only if users request)
 
 
+
 Integration Points
 
 Home Assistant

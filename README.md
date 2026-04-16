@@ -57,7 +57,7 @@ LAN-First, Cloud-Optional
 Hub/node communication over LAN only — no phone home by default
 Self-hosted Ollama on your server? Route complex queries there
 External LLM? Opt-in, explicit, user's responsibility
-Subscription model (coming) does not touch your data or voice — anonymous token only
+
 
 Worksite Access Control (MVP feature)
 

@@ -246,7 +246,7 @@ GitHub: github.com/1-404
 
 Status: Coming soon. Want to help shape it?
 
-Quick Links
+Quick Links (coming soon)
 
 - Full Documentation — architecture deep-dives, integration guides, security considerations
 

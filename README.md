@@ -115,29 +115,38 @@ Loads on demand for unknown intents
 Ollama on your LAN server preferred; on-device fallback
 User expects a pause ("give me a second") — no surprise
 
-Token Hierarchy (All Anonymous)
-Server token    → subscription state (Cloudflare KV, not your data)
-Hub token       → LAN master device, scoped permissions
-Node token      → crew/family device, issued by hub, limited to hub's intent allowlist
-Guest token     → temporary access, expires on LAN departure or explicit revoke
-NFC token       → instant permission grant via tap, single-use or time-limited
+- Token Hierarchy (All Anonymous)
+
+- Server token    → subscription state (Cloudflare KV, not your data)
+
+- Hub token       → LAN master device, scoped permissions
+
+- Node token      → crew/family device, issued by hub, limited to hub's intent allowlist
+
+- Guest token     → temporary access, expires on LAN departure or explicit revoke
+
+- NFC token       → instant permission grant via tap, single-use or time-limited
+
 All tokens are cryptographic capability objects, not identity documents. No usernames. No email. No tracking.
 Intent System — Mathematical Privacy
-You say: "Call Johnson"
-       ↓
-VantEdge parses intent: {action: CALL, contact: Johnson}
-       ↓
-Fires Android intent to phone app (outbound = standard broadcast)
-       ↓
-Phone app handles the call
-       ↓
-Phone app binds back via VantEdge's custom permission gate
-       ↓
-Sends confirmation: {success: true, contact: Johnson}
-       ↓
-VantEdge receives via bound service, logs confirmation, stops.
-The architecture: Outbound intents are broadcast (anyone can see). Return data comes back through a bound service protected by a custom signature-level permission — only apps VantEdge explicitly trusts can bind and reply.
-This means: yes, data returns (for confirmation, logging, UI feedback). But the return path is mathematically gated. Only pre-approved apps can communicate back. VantEdge cannot see what apps did — only that they completed the action.
+
+- You say: "Call Johnson"
+
+ - VantEdge parses intent: {action: CALL, contact: Johnson}
+
+- Fires Android intent to phone app (outbound = standard broadcast)
+
+- Phone app handles the call
+
+- Phone app binds back via VantEdge's custom permission gate
+
+- Sends confirmation: {success: true, contact: Johnson}
+  
+- VantEdge receives via bound service, logs confirmation, stops.
+
+ -The architecture: Outbound intents are broadcast (anyone can see). Return data comes back through a bound service protected by a custom signature-level permission — only apps VantEdge explicitly trusts can bind and reply.
+
+- This means: yes, data returns (for confirmation, logging, UI feedback). But the return path is mathematically gated. Only pre-approved apps can communicate back. VantEdge cannot see what apps did — only that they completed the action.
 The privacy guarantee still holds: Android OS mediates everything. VantEdge structurally cannot invoke untrusted apps or receive data from them.
 Hub/Node Example
 Boss: "Hey VantEdge, give Johnson site access"
